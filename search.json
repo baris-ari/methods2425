@@ -80,66 +80,6 @@
     ]
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Introduction to Modern Statistics (2e)",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#introduction-to-modern-statistics-2e",
-    "href": "resources.html#introduction-to-modern-statistics-2e",
-    "title": "Resources",
-    "section": "",
-    "text": "Introduction to Modern Statistics by Mine Çetinkaya-Rundel and Johanna Hardin is an excellent textbook for learning foundational concepts in statistics and data analysis while learning R.\nThe online textbook is free and available at https://openintro-ims.netlify.app/.\nAlso see http://openintro.org/book/ims for supplementary materials and additional resources.",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#hands-on-programming-with-r",
-    "href": "resources.html#hands-on-programming-with-r",
-    "title": "Resources",
-    "section": "Hands-On Programming with R",
-    "text": "Hands-On Programming with R\n\n\nHands-on Programming with R by Garrett Grolemund is a straightforward introduction to R. It is useful to learn the basics of R notation.\nWe cover most of the content in Part 1 & 2 in the first four weeks, but if you want to approach the same content from a different angle, you will find this textbook useful.\nIt is freely available here: https://rstudio-education.github.io/hopr/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#r-for-data-science-2e",
-    "href": "resources.html#r-for-data-science-2e",
-    "title": "Resources",
-    "section": "R for Data Science (2e)",
-    "text": "R for Data Science (2e)\n\n\n\n\n\nR for Data Science (2e) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund is an introductory textbook on getting started with R and tidyverse for data management, analysis and visualisation. It is an excellent source to learn the basics of R, R Studio and tidyverse.\nIt can be used as a reference textbook, especially when you are struggling to recall the syntax. It has many examples to get a grasp (or remember) how to use many base R and tidyverse functions.\nIt is free and available here: https://r4ds.hadley.nz/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#r-graphics-cookbook",
-    "href": "resources.html#r-graphics-cookbook",
-    "title": "Resources",
-    "section": "R Graphics Cookbook",
-    "text": "R Graphics Cookbook\n\n\nR Graphics Cookbook by Winston Chang is a detailed textbook on creating visualisations in R via using ggplot2.\nIt is free and available here: https://r-graphics.org/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#ggplot2-elegant-graphics-for-data-analysis-3e",
-    "href": "resources.html#ggplot2-elegant-graphics-for-data-analysis-3e",
-    "title": "Resources",
-    "section": "ggplot2: Elegant Graphics for Data Analysis (3e)",
-    "text": "ggplot2: Elegant Graphics for Data Analysis (3e)\n\n\n\n\n\nThis book explains the underlying theory behind ggplot2. It is available here: https://ggplot2-book.org/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
     "objectID": "02_data_in_R.html",
     "href": "02_data_in_R.html",
     "title": "2  Data in R",
@@ -217,6 +157,66 @@
     "text": "2.8 Working directory\ngetwd() means get working directory. Working directory is your default file path. This is where R looks for files and saves any output.\nWorking directory can be different in each computer. R Studio has nice tools for navigation.\nYou can directly go to your working directory through Files tab (usually in right bottom corner) and using the More drop-down menu. Under there there are a few options:\n\nSet as working directory: sets your working directory as the current directory shown in Files\nGo to working directory: takes you to current working directory\n\nIf you click on go to working directory, you should see my_first_file.csv here.\nIt is a good idea to create a new directory (folder for Windows) for this module. Your folder names should be simple and easy to write. For example: research_methods is a good name.\nTry not to use space in file names. Underscore or dash are better alternatives. Also, I encourage always using lowercase for file names, which also goes for object names in R.\nYou can use your operating system to create this directory. You could also use R Studio’s Files tab. Put this folder somewhere easy to access.\nLet’s save your R script. You can use drop-down menu: File &gt;&gt; Save OR simply by using the keyboard shortcut .\nGive an intuitive name to your script. For example, learn_02.R is a good name.\nIt is generally good idea to keep your data in a sub-directory named data. Create such a directory and move my_first_file.csv there.\nNext week, we will continue with a simple dataset, which will be available on Blackboard.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data in R</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Introduction to Modern Statistics (2e)",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#introduction-to-modern-statistics-2e",
+    "href": "resources.html#introduction-to-modern-statistics-2e",
+    "title": "Resources",
+    "section": "",
+    "text": "Introduction to Modern Statistics by Mine Çetinkaya-Rundel and Johanna Hardin is an excellent textbook for learning foundational concepts in statistics and data analysis while learning R.\nThe online textbook is free and available at https://openintro-ims.netlify.app/.\nAlso see http://openintro.org/book/ims for supplementary materials and additional resources.",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#hands-on-programming-with-r",
+    "href": "resources.html#hands-on-programming-with-r",
+    "title": "Resources",
+    "section": "Hands-On Programming with R",
+    "text": "Hands-On Programming with R\n\n\nHands-on Programming with R by Garrett Grolemund is a straightforward introduction to R. It is useful to learn the basics of R notation.\nWe cover most of the content in Part 1 & 2 in the first four weeks, but if you want to approach the same content from a different angle, you will find this textbook useful.\nIt is freely available here: https://rstudio-education.github.io/hopr/",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#r-for-data-science-2e",
+    "href": "resources.html#r-for-data-science-2e",
+    "title": "Resources",
+    "section": "R for Data Science (2e)",
+    "text": "R for Data Science (2e)\n\n\n\n\n\nR for Data Science (2e) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund is an introductory textbook on getting started with R and tidyverse for data management, analysis and visualisation. It is an excellent source to learn the basics of R, R Studio and tidyverse.\nIt can be used as a reference textbook, especially when you are struggling to recall the syntax. It has many examples to get a grasp (or remember) how to use many base R and tidyverse functions.\nIt is free and available here: https://r4ds.hadley.nz/",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#r-graphics-cookbook",
+    "href": "resources.html#r-graphics-cookbook",
+    "title": "Resources",
+    "section": "R Graphics Cookbook",
+    "text": "R Graphics Cookbook\n\n\nR Graphics Cookbook by Winston Chang is a detailed textbook on creating visualisations in R via using ggplot2.\nIt is free and available here: https://r-graphics.org/",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#ggplot2-elegant-graphics-for-data-analysis-3e",
+    "href": "resources.html#ggplot2-elegant-graphics-for-data-analysis-3e",
+    "title": "Resources",
+    "section": "ggplot2: Elegant Graphics for Data Analysis (3e)",
+    "text": "ggplot2: Elegant Graphics for Data Analysis (3e)\n\n\n\n\n\nThis book explains the underlying theory behind ggplot2. It is available here: https://ggplot2-book.org/",
+    "crumbs": [
+      "Resources"
     ]
   }
 ]
