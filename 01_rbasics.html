@@ -156,6 +156,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_data_in_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data in R</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -365,7 +371,7 @@ Figure&nbsp;1.2: Our first calculation
 <section id="create-a-simple-dataset" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="create-a-simple-dataset"><span class="header-section-number">1.5</span> Create a simple dataset</h2>
 <p>Imagine that we have the names and birth years of a number of people. We cannot really hold each piece of information in separate objects. We would like to store them altogether in a single object, like a spreadsheet.</p>
-<p>Let’s start with names. We have five people:</p>
+<p>Let’s start with names. We have eight people:</p>
 <ol type="1">
 <li>Keir Starmer</li>
 <li>Rishi Sunak</li>
@@ -373,6 +379,8 @@ Figure&nbsp;1.2: Our first calculation
 <li>Boris Johnson</li>
 <li>Theresa May</li>
 <li>David Cameron</li>
+<li>Gordon Brown</li>
+<li>Tony Blair</li>
 </ol>
 <p>We can store their full names in a single object using the combine function <code>c()</code>.</p>
 <div class="cell">
