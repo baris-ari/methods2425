@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./resources.html" rel="next">
+<link href="./03_data_analysis.html" rel="next">
 <link href="./01_rbasics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -158,6 +158,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./03_data_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Data Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
@@ -172,14 +178,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#length-of-an-object" id="toc-length-of-an-object" class="nav-link active" data-scroll-target="#length-of-an-object"><span class="header-section-number">2.1</span> Length of an object</a></li>
-  <li><a href="#is-equal-to-operator" id="toc-is-equal-to-operator" class="nav-link" data-scroll-target="#is-equal-to-operator"><span class="header-section-number">2.2</span> <em>is equal to</em> operator</a></li>
-  <li><a href="#creating-a-simple-dataset" id="toc-creating-a-simple-dataset" class="nav-link" data-scroll-target="#creating-a-simple-dataset"><span class="header-section-number">2.3</span> Creating a simple dataset</a></li>
-  <li><a href="#numerical-value-stored-as-character" id="toc-numerical-value-stored-as-character" class="nav-link" data-scroll-target="#numerical-value-stored-as-character"><span class="header-section-number">2.4</span> Numerical value stored as character</a></li>
-  <li><a href="#categorical-data" id="toc-categorical-data" class="nav-link" data-scroll-target="#categorical-data"><span class="header-section-number">2.5</span> Categorical data</a></li>
-  <li><a href="#counting-frequencies-using-table" id="toc-counting-frequencies-using-table" class="nav-link" data-scroll-target="#counting-frequencies-using-table"><span class="header-section-number">2.6</span> Counting frequencies using table ()</a></li>
-  <li><a href="#saving-data" id="toc-saving-data" class="nav-link" data-scroll-target="#saving-data"><span class="header-section-number">2.7</span> Saving data</a></li>
-  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory"><span class="header-section-number">2.8</span> Working directory</a></li>
+  <li><a href="#class-of-an-object" id="toc-class-of-an-object" class="nav-link active" data-scroll-target="#class-of-an-object"><span class="header-section-number">2.1</span> Class of an object</a></li>
+  <li><a href="#length-of-an-object" id="toc-length-of-an-object" class="nav-link" data-scroll-target="#length-of-an-object"><span class="header-section-number">2.2</span> Length of an object</a></li>
+  <li><a href="#is-equal-to-operator" id="toc-is-equal-to-operator" class="nav-link" data-scroll-target="#is-equal-to-operator"><span class="header-section-number">2.3</span> <em>is equal to</em> operator</a></li>
+  <li><a href="#creating-a-simple-dataset" id="toc-creating-a-simple-dataset" class="nav-link" data-scroll-target="#creating-a-simple-dataset"><span class="header-section-number">2.4</span> Creating a simple dataset</a></li>
+  <li><a href="#data-frame" id="toc-data-frame" class="nav-link" data-scroll-target="#data-frame"><span class="header-section-number">2.5</span> Data frame</a></li>
+  <li><a href="#variable-row-observation" id="toc-variable-row-observation" class="nav-link" data-scroll-target="#variable-row-observation"><span class="header-section-number">2.6</span> Variable, Row, Observation</a></li>
+  <li><a href="#numerical-value-stored-as-character" id="toc-numerical-value-stored-as-character" class="nav-link" data-scroll-target="#numerical-value-stored-as-character"><span class="header-section-number">2.7</span> Numerical value stored as character</a></li>
+  <li><a href="#categorical-data" id="toc-categorical-data" class="nav-link" data-scroll-target="#categorical-data"><span class="header-section-number">2.8</span> Categorical data</a></li>
+  <li><a href="#counting-frequencies-using-table" id="toc-counting-frequencies-using-table" class="nav-link" data-scroll-target="#counting-frequencies-using-table"><span class="header-section-number">2.9</span> Counting frequencies using table ()</a></li>
+  <li><a href="#saving-data" id="toc-saving-data" class="nav-link" data-scroll-target="#saving-data"><span class="header-section-number">2.10</span> Saving data</a></li>
+  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory"><span class="header-section-number">2.11</span> Working directory</a></li>
   </ul>
 </nav>
     </div>
@@ -267,12 +276,13 @@ Vectors
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                 <span class="dv">1953</span>  <span class="co"># Tony Blair)</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                 )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>##&nbsp;Class of an object</p>
 <p>The object <code>birth_years</code> is a numerical vector. It contains numbers. Let’s check the object.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>birth_years</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 1962 1980 1975 1964 1956 1966 1951 1953</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="class-of-an-object" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="class-of-an-object"><span class="header-section-number">2.1</span> Class of an object</h2>
 <p>R understand the differences between textual and numerical information. We can check the class of an object using the <code>class()</code> function.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># birth_years contain numerical information</span></span>
@@ -283,8 +293,9 @@ Vectors
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(names_pm)</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] "character"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="length-of-an-object" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="length-of-an-object"><span class="header-section-number">2.1</span> Length of an object</h2>
+</section>
+<section id="length-of-an-object" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="length-of-an-object"><span class="header-section-number">2.2</span> Length of an object</h2>
 <p>We typed names of last eight Prime Ministers and their respective birth years. The number of items in names_pm and birth_years should be both eight. We can see the number of items in a vector by the <code>length()</code> function.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of items in a vector can be seen by length()</span></span>
@@ -298,8 +309,8 @@ Vectors
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="is-equal-to-operator" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="is-equal-to-operator"><span class="header-section-number">2.2</span> <em>is equal to</em> operator</h2>
+<section id="is-equal-to-operator" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="is-equal-to-operator"><span class="header-section-number">2.3</span> <em>is equal to</em> operator</h2>
 <p>You can ask R whether two things are equal to each other or not. To do so, we are going to use the <code>==</code> operator, which means is equal to.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># is equal to operator: ==</span></span>
@@ -317,8 +328,8 @@ Vectors
 </div>
 <p>The class of the objects is not the same because <code>names_pm</code> contains textual information whereas <code>birth_years</code> contains numerical information.</p>
 </section>
-<section id="creating-a-simple-dataset" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="creating-a-simple-dataset"><span class="header-section-number">2.3</span> Creating a simple dataset</h2>
+<section id="creating-a-simple-dataset" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="creating-a-simple-dataset"><span class="header-section-number">2.4</span> Creating a simple dataset</h2>
 <p>Last week we created a simple spreadsheet that looked like the data shown in</p>
 <p>We can achieve this by doing a column bind which refers to vertically binding two vectors and can be done using the <code>cbind()</code> function.</p>
 <div class="cell">
@@ -410,7 +421,9 @@ Rows and Columns in a Spreadsheet
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>my_data[<span class="dv">9</span>,<span class="dv">2</span>]</span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Error in my_data[9, 2]: subscript out of bounds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>##&nbsp;Data frame</p>
+</section>
+<section id="data-frame" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="data-frame"><span class="header-section-number">2.5</span> Data frame</h2>
 <p>It is customary to keep a spreadsheet-like looking data (i.e., two-dimensional) as something called a <em>data frame</em> in R. Let’s check the class of my_data.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Class of my_data</span></span>
@@ -459,7 +472,9 @@ Rows and Columns in a Spreadsheet
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(my_data)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 8 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>##&nbsp;Variable, Row, Observation</p>
+</section>
+<section id="variable-row-observation" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="variable-row-observation"><span class="header-section-number">2.6</span> Variable, Row, Observation</h2>
 <p>Let’s check some more terminology that is frequently used in data analysis.</p>
 <p>A <em>column vector</em> typically shows a variable. A <em>row vector</em> typically shows an observation. A particular item, which is a <em>cell</em> in a spreadsheet, is a value. This is visualised in <a href="#fig-tidydata" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>.</p>
 <div id="fig-tidydata" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -489,12 +504,12 @@ Figure&nbsp;2.1: Variables, observations, rows. Well-organised data come in this
 <span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] "1975"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="numerical-value-stored-as-character" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="numerical-value-stored-as-character"><span class="header-section-number">2.4</span> Numerical value stored as character</h2>
+<section id="numerical-value-stored-as-character" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="numerical-value-stored-as-character"><span class="header-section-number">2.7</span> Numerical value stored as character</h2>
 <p>Let’s say we would like to calculate each person’s current age. We could simply tell R to subtract each birth year from current year (2024).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2024</span> <span class="sc">-</span> my_data<span class="co">#| $birth_years</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Error in FUN(left, right): non-numeric argument to binary operator</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2024</span> <span class="sc">-</span> my_data<span class="sc">$</span>birth_years</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Error in 2024 - my_data$birth_years: non-numeric argument to binary operator</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Instead of the calculation, I get an error message: <em>non-numeric argument to…</em>! Let’s see what is going on.</p>
 <div class="cell">
@@ -552,8 +567,8 @@ Figure&nbsp;2.1: Variables, observations, rows. Well-organised data come in this
 <span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8    Tony Blair        1953          70</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="categorical-data" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="categorical-data"><span class="header-section-number">2.5</span> Categorical data</h2>
+<section id="categorical-data" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="categorical-data"><span class="header-section-number">2.8</span> Categorical data</h2>
 <p>I would like to add a variable showing the party of each Prime Minister. I can create a vector and add this as a column in <code>my_data</code>.</p>
 <p>For example, Rishi Sunak is from Conservative Party, Liz Truss is also Conservative. Kier Starmer, Gordon Brown and Tony Blair are Labour.</p>
 <p>We need a vector where the first item is Labour, followed by five Conservative, and two Labour at the end.</p>
@@ -617,8 +632,8 @@ Figure&nbsp;2.1: Variables, observations, rows. Well-organised data come in this
 <span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8    Tony Blair        1953          70       Labour</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="counting-frequencies-using-table" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="counting-frequencies-using-table"><span class="header-section-number">2.6</span> Counting frequencies using table ()</h2>
+<section id="counting-frequencies-using-table" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="counting-frequencies-using-table"><span class="header-section-number">2.9</span> Counting frequencies using table ()</h2>
 <p>Let’s see how many individuals from each party is in my data frame. You could count it one by one in a small data set such as this one. I can see that there are 5 Conservatives and three Labour, but imagine that it was a large dataset where counting manually was not an option.</p>
 <p>We can use <code>table()</code> function to achieve this.</p>
 <div class="cell">
@@ -628,8 +643,8 @@ Figure&nbsp;2.1: Variables, observations, rows. Well-organised data come in this
 <span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            5            3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="saving-data" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="saving-data"><span class="header-section-number">2.7</span> Saving data</h2>
+<section id="saving-data" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="saving-data"><span class="header-section-number">2.10</span> Saving data</h2>
 <p>In the final step, we will learn how to save a data frame such as <code>my_data</code> for future use. We have a few options:</p>
 <ol type="1">
 <li>Write my_data into a spreadsheet-like file.</li>
@@ -645,8 +660,8 @@ Figure&nbsp;2.1: Variables, observations, rows. Well-organised data come in this
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="working-directory" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="working-directory"><span class="header-section-number">2.8</span> Working directory</h2>
+<section id="working-directory" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="working-directory"><span class="header-section-number">2.11</span> Working directory</h2>
 <p><code>getwd()</code> means get working directory. Working directory is your default file path. This is where R looks for files and saves any output.</p>
 <p>Working directory can be different in each computer. R Studio has nice tools for navigation.</p>
 <p>You can directly go to your working directory through Files tab (usually in right bottom corner) and using the More drop-down menu. Under there there are a few options:</p>
@@ -1094,8 +1109,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./resources.html" class="pagination-link" aria-label="Resources">
-        <span class="nav-page-text">Resources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03_data_analysis.html" class="pagination-link" aria-label="Basic Data Analysis">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Data Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
